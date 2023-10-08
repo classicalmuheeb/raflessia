@@ -29,6 +29,4 @@ Selected datasets varies dramatically in terms of number of images per category 
 ```bash
 !python fed_avg.py --balanced=True --strategy=FedAvg --batch_size=32 --num_clients=20 --num_rounds=100
 
-#### For FedProx strategies:
-```bash
 !python fed_prox.py --iid=True --strategy=FedProx --batch_size=10 --num_rounds=20 --num_clients=50
