@@ -11,7 +11,8 @@ We used two large publicly-available satellite imagery datasets:
 2. MLRSNet.
 Selected datasets varies dramatically in terms of number of images per category & sizes, and other attributes as they are taken from different satellites, weather conditions, geographical conditions and activities captured.
 
-![EUROSAT](images/EuroSAT_Dataset.png) ![MLRS](images/MLRS_Dataset.jpg)
+![EUROSAT](images/EuroSAT_Dataset.png) 
+![MLRS](images/MLRS_Dataset.jpg)
 
 ## Experimental Results
 ![EuroSAT_Accuracy](images/Accuracy_Loss_EuroSAT.png) 
@@ -29,5 +30,5 @@ Selected datasets varies dramatically in terms of number of images per category 
 ```bash
 !python fed_avg.py --balanced=True --strategy=FedAvg --batch_size=32 --num_clients=20 --num_rounds=100
 
-```bash
+For FedProx strategies:
 !python fed_prox.py --iid=True --strategy=FedProx --batch_size=10 --num_rounds=20 --num_clients=50
