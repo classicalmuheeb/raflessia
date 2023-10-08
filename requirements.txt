@@ -1,0 +1,8 @@
+ray==1.13.0
+flwr[simulation]
+tensorflow_io==0.32.0
+tensorflow==2.12.0
+pytorch
+pandas
+numpy
+matplotlib
